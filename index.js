@@ -20,7 +20,8 @@ const pool = new Pool({
 	host: process.env.HOST,
 	database: process.env.DATABASE,
 	password: process.env.PASSWORD,
-	port: 5432, // Default PostgreSQL port
+  port: 5432,
+  ssl: true
 });
 console.log(process.env.USERNAME_DATA);
 console.log(process.env.PASSWORD);
